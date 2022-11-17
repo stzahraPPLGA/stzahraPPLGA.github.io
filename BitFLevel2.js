@@ -17,7 +17,7 @@ var myGameArea = {
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
-        this.interval = setInterval(updateGameArea, 20);
+        this.interval = setInterval(updateGameArea, 50);
         window.addEventListener('keydown', function (e){
             myGameArea.keys = (myGameArea.keys || []);
             myGameArea.keys[e.keyCode]= true;
@@ -112,7 +112,7 @@ function updateGameArea(){
             return; 
         }
     }
-    if(myGameArea.frameNo >= 3500){
+    if(myGameArea.frameNo >= 5000){
         myGameArea.stop();
         document.querySelector('#restart h2').innerHTML = "YOU WIN";
         document.getElementById('restart').style.display='';
