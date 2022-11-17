@@ -127,13 +127,13 @@ function updateGameArea(){
             mySound.play();
             myMusic.stop();
             myGameArea.stop();
-            document.querySelector('#restart h2').innerHTML= "GAMEOVER";
+            document.querySelector('#restart h2').innerHTML= "GAME OVER";
             return;
         }
     }
     if(myGameArea.frameNo >= 2500){
         myGameArea.stop();
-        document.querySelector('#restart h2').innerHTML = "YOUWIN";
+        document.querySelector('#restart h2').innerHTML = "YOU WIN";
         document.getElementById('restart').style.display='';
     }
 
