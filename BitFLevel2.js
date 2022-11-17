@@ -135,7 +135,7 @@ function updateGameArea(){
         }
     }
     for (i = 0; i < myObstacles.length; i += 1){
-        myObstacles[i].x += -3;
+        myObstacles[i].x += -10;
         myObstacles[i].update();
     }
     function everyinterval(n){
