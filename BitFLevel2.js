@@ -108,11 +108,11 @@ function updateGameArea(){
     for (i = 0; i < myObstacles.length; i += 1){
         if (myGamePiece.crashWith(myObstacles[i])) {
             myGameArea.stop();
-            document.querySelector('#restart h2').innerHTML= "GAMEOVER";
+            document.querySelector('#restart h2').innerHTML= "GAME OVER";
             return; 
         }
     }
-    if(myGameArea.frameNo >= 800){
+    if(myGameArea.frameNo >= 3500){
         myGameArea.stop();
         document.querySelector('#restart h2').innerHTML = "YOUWIN";
         document.getElementById('restart').style.display='';
