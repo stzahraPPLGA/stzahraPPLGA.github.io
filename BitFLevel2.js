@@ -123,7 +123,7 @@ function updateGameArea(){
     myBackground.newPos();
     myBackground.update();
     myGameArea.frameNo += 1;
-    if (myGameArea.frameNo == 1 || everyinterval(200)) {
+    if (myGameArea.frameNo == 1 || everyinterval(500)) {
         if(myGameArea.frameNo < 800){
         x = myGameArea.canvas.width;
         size = Math.random()*(80-40)+40;
