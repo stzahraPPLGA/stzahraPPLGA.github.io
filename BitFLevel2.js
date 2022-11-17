@@ -17,7 +17,7 @@ var myGameArea = {
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
-        this.interval = setInterval(updateGameArea, 100);
+        this.interval = setInterval(updateGameArea, 20);
         window.addEventListener('keydown', function (e){
             myGameArea.keys = (myGameArea.keys || []);
             myGameArea.keys[e.keyCode]= true;
@@ -123,7 +123,7 @@ function updateGameArea(){
     myBackground.newPos();
     myBackground.update();
     myGameArea.frameNo += 1;
-    if (myGameArea.frameNo == 1 || everyinterval(100)) {
+    if (myGameArea.frameNo == 1 || everyinterval(200)) {
         if(myGameArea.frameNo < 800){
         x = myGameArea.canvas.width;
         size = Math.random()*(80-40)+40;
