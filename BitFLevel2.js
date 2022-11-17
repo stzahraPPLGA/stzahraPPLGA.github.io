@@ -114,7 +114,7 @@ function updateGameArea(){
     }
     if(myGameArea.frameNo >= 3500){
         myGameArea.stop();
-        document.querySelector('#restart h2').innerHTML = "YOUWIN";
+        document.querySelector('#restart h2').innerHTML = "YOU WIN";
         document.getElementById('restart').style.display='';
     }
     
