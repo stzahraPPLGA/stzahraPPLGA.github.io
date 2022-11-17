@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Level 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+            @keyframes Arestart {
+                from{width: 50%; height: 50%; opacity: 10%;}
+                to{width: 400px; height: 200px; opacity: 90%;}
+            }
+            body{
+                margin: 0; overflow: hidden;
+            }
+            canvas{
+                margin: auto; display: block;
+                border: 1px solid #d3d3d3;
+                background-color: #ffffff;
+            }
+            #restart{
+                text-align: center;
+                position: fixed;
+                border-radius: 10px;
+                width: 400px;
+                height: 200px;
+                top: 300px;
+                left: 690px;
+                transform: translate(-50%, -50%);
+                background-color: #ffffff; opacity: 90%;
+                animation: Arestart 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            }
+        </style>
+    </head>
+    <body onload="startGame()"> 
+        <div id="restart" style="display: none;">
+        <h2><img src="GAMEOVER.png" width="195" height="50"> </h2>
+        <h3>SCORE: <span id="skor">0</span></h3>
+        <a class="" href="GameCanvasBitFLevel1.html"><img src="PLAYAGAIN.png" width="195" height="50"></a>
+        <a class="" href="Index.html"><img src="BACKTOMENU.png" width="195" height="50"></a>
+        </div>
+        <script src="BitFLevel1.js"></script>
+    </body>
+</html>
+    
